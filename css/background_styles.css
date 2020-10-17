@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 * {
@@ -6,4 +7,14 @@
 
 html {
     background-color: #DFDFDF;
+=======
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway;
+}
+
+html {
+    background-color: #DFDFDF;
+>>>>>>> main
 }
