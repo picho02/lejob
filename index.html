@@ -1,425 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body{
-	font-family: 'Open Sans', sans-serif;
-
-}
-    /* jjjjjjjjjjjjjjjjj */
-	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-	*{
-	  margin: 0;
-	  padding: 0;
-	  box-sizing: border-box;
-	  font-family: 'Poppins', sans-serif;
-	}
-	/* custom scroll bar */
-	::-webkit-scrollbar {
-		width: 10px;
-	}
-	::-webkit-scrollbar-track {
-		background: #f1f1f1;
-	}
-	::-webkit-scrollbar-thumb {
-		background: #888;
-	}
-	::selection{
-	  background: rgb(0,123,255,0.3);
-	}
-	.content{
-	  max-width: 1250px;
-	  margin: auto;
-	  padding: 0 30px;
-	}
-	.navbar{
-	  position: fixed;
-	  width: 100%;
-	  z-index: 2;
-	  padding: 25px 0;
-	  transition: all 0.3s ease;
-	}
-	.navbar.sticky{
-	  background: #e3f2fd;
-	  padding: 10px 0;
-	  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
-	}
-	.navbar .content{
-	  display: flex;
-	  align-items: center;
-	  justify-content: space-between;
-	}
-	.navbar .logo a{
-	  color: #fff;
-	  font-size: 30px;
-	  font-weight: 600;
-	  text-decoration: none;
-	}
-	.navbar .menu-list{
-	  display: inline-flex;
-	}
-	.menu-list li{
-	  list-style: none;
-	}
-	.menu-list li a{
-	  color: rgb(71, 221, 231);
-	  font-size: 30px;
-	  font-weight: 500;
-	  margin-left: 25px;
-	  text-decoration: none;
-	  transition: all 0.3s ease;
-	}
-	.menu-list li a:hover{
-	  color: #007bff;
-	}
-	.banner{
-	  background: url("banner.jpg") no-repeat;
-	  height: 100vh;
-	  background-size: cover;
-	  background-position: center;
-	  background-attachment: fixed;
-	}
-	.about{
-	  padding: 30px 0;
-	}
-	.about .title{
-	  font-size: 38px;
-	  font-weight: 700;
-	}
-	.about p{
-	  padding-top: 20px;
-	  text-align: justify;
-	}
-	.icon{
-	  color: #fff;
-	  font-size: 20px;
-	  cursor: pointer;
-	  display: none;
-	}
-	.menu-list .cancel-btn{
-	  position: absolute;
-	  right: 30px;
-	  top: 20px;
-	}
-	@media (max-width: 1230px) {
-	  .content{
-		padding: 0 60px;
-	  }
-	}
-	@media (max-width: 1100px) {
-	  .content{
-		padding: 0 40px;
-	  }
-	}
-	@media (max-width: 900px) {
-	  .content{
-		padding: 0 30px;
-	  }
-	}
-	@media (max-width: 868px) {
-	  body.disabled{
-		overflow: hidden;
-	  }
-	  .icon{
-		display: block;
-	  }
-	  .icon.hide{
-		display: none;
-	  }
-	  .navbar .menu-list{
-		position: fixed;
-		height: 100vh;
-		width: 100%;
-		max-width: 400px;
-		left: -100%;
-		top: 0px;
-		display: block;
-		padding: 40px 0;
-		text-align: center;
-		background: #222;
-		transition: all 0.3s ease;
-	  }
-	  .navbar.show .menu-list{
-		left: 0%;
-	  }
-	  .navbar .menu-list li{
-		margin-top: 45px;
-	  }
-	  .navbar .menu-list li a{
-		font-size: 23px;
-		margin-left: -100%;
-		transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	  }
-	  .navbar.show .menu-list li a{
-		margin-left: 0px;
-	  }
-	}
-	@media (max-width: 380px) {
-	  .navbar .logo a{
-		font-size: 27px;
-	  }
-	}
-	
-
-
-
-/*  */
-header{
-	width: 100%;
-	height: 99px;
-	background: #e3f2fd;
-	color: #fff;
-
-	position: fixed;
-	top:0;
-	left: 0;
-	z-index: 100;
-}
-header img{
-	width: 150px;
-    height: 110px;
-    
-}
-.contenedor {
-	width: 98;
-	margin: auto;
-}
-
-h1 {
-	float: left;
-}
- 
- header .contenedor{
- 	display: left;
- }
-
-section {
-	width: 100%;
-	margin-bottom: 25px;
-}
-
-/*menu*/
-
-#menu-bar{
-	display: none;
-}
-
-header label{
-	float: right;
-	font-size: 28px;
-	margin: 6px 0;
-
-}
-
-.menu{
-	position: absolute;
-	top: 50px;
-	left: 0;
-	width: 100%;
-	height:100vh;
-	background: #e3f2fd;
-	transition: all 0.5s;
-	text-decoration: none;
-	transform: translateX(-100%);
-}
-
-.menu a {
-	display: block;
-	color: #fff;
-	height: 60px;
-	text-decoration: none;
-	padding: 25px;
-	border-bottom: 2px solid rgba(255,255,255,0.8);
-}
-
-.menu a:hover{
-	
-	background: rgba(255,255,255,0.3);
-}
-
-
-#menu-bar:checked ~.menu{
-	transform: translateX(0%);
-}
-
-/*/menu*/
-
-/*banner*/
-#banner{
-	margin-top: 40px;
-	position: relative;
-
-}
-
-#banner img{
-
-	width: 100%;
-	height:500px;
-}
-
-#banner .contenedor  {
-	position: absolute;
-	top: 40%;
-	left: 10%;
-	right: 10%;
-	transform: translateX(-50%) translateY(-50%);
-	color: #fff;
-} 
-
-#banner h2{
-	font-size: 28px;
-
-}
-
-#banner p{
-	font-size: 20px;
-}
-
-
-/*banner*/
-
-/*frase*/
-#frase {
-	margin-top: 50px;
-	position: relative;
-
-}
-/*frase*/
-
-/*mision*/
-
-#mision {
-	text-align: justify-all;
-	display:block;
-	margin:auto;
-
-}
-
-#mision img{
-	 width: 115px;
-    height: 120px;
-    margin: 3%;
-    
-}
-
-/*mision*/
-
-/*vision*/
-
-#vision {
-	 text-align: right;
-	display:block;
-	margin:3%;
-
-}
-#vision img{
-	 width: 150px;
-    height: 150px;
-    margin: 3%;
-    
-}
-
-
-/*vision*/
- /*fb*/
-
- #fb{
-
-  width: 100%;
-    height: 100%;
-    margin: 3%;
-
- }
-
-/*/////////////////////////*/
-
-/*FOOTER*/
-.footer{
-	background: #e3f2fd;
-	color: #48CAEB;
-	padding: 50px;
-
-}
-.footer .footer_menu{
-	max-width: 1000px;
-	width: 100%;
-	display: flex;
-	margin: 0px auto 25px;
-	justify-content: space-between;
-}
-
-.footer .footer_menu .titulo{
-	margin-bottom: 20px;
-	color: #48CAEB;
-}
-.footer .footer_menu ul li a{
-	display: block;
-	margin-bottom: 10px;
-	color: #48CAEB;
-}
-.footer .footer_menu ul li a:hover{
-	background: rgba(255,255,255,0.3);
-}
-
-
-/*//////////////////////
-//////////////////*/
-
-
-/*CONTACTO*/
-.main1 {
-	
-	padding: 100px;
-}
-
-
-#form{
-	width : 500px;
-	display:block;
-	margin:3%;
-
-
-}
-
-
-
-
-/*//////////////*/
-#card{
-
-  width: 100%;
-    height: 100%;
-    margin: 8%;
-
- }
- #card img{
- 	 width: 100px;
-    height: 100px;
-    margin: 0%;
- }
-
-
-#banner1{
-	text-align: right;
-	
-	margin: 3%;
- }
-
-}
-
-#texto1{
-	text-align: right;
-	
-	margin: 10px;
-}
-
-#cardA{
-	width: 100px;
-    height: 100%;
-    margin: 10%;
-
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>MUESTRA</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+	<link rel="stylesheet"  href="css/fontello.css">
+	<link rel="stylesheet"  href="css/estilos.css">
+	</head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<body>
+		<header>
+            
+
+            <nav class="navbar">
+				<div class="logo">
+				<a href="index.html"><img src="images/legob.png"></a>
+				</div>
+				<div class="content">
+				  
+				  <ul class="menu-list">
+					<div class="icon cancel-btn">
+					  <i class="fas fa-times"></i>
+					</div>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">AVATAR</a></li>
+					<li><a href="#">QUIENES SOMOS</a></li>
+					
+				  </ul>
+				  <div class="icon menu-btn">
+					<i class="fas fa-bars"></i>
+				  </div>
+				</div>
+			  </nav>
+
+			<!-- <div class="contenedor">
+                
+				<a href="index.html"><img src="images/legob.png"></a>				
+				<input type="checkbox" id="menu-bar">
+				<label class="icon-menu" for="menu-bar"></label>
+				<nav class="menu">
+                    
+					<a href="index.html">HOME</a>
+					<a href="#mision">MI AVATAR</a>
+					<a href="acerca.html">QUINES SOMOS</a>
+
+				</nav>	
+			</div>	 -->
+		</header>
+
+		<main>
+            <br><br><br>
+			<section id="banner">
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-interval="10000">
+                        
+                        <img src="images/1.jpg" class="d-block w-100" >
+                        
+                      </div>
+                      <div class="carousel-item" data-interval="2000">
+                        <img src="images/2.jpg" class="d-block w-100" >
+                      </div>
+                      
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+				<!-- <img src="images/banner.jpg">
+
+					<div class="contenedor">
+						<h1>COMO PUEDO EMPEZAR?</h1>
+						
+						<br>
+						<a class="btn btn-primary" href="acerca.html" role="button">SABER MAS</a>
+					</div> -->
+			</section>
+
+			<section id="frase">
+				<div class="jumbotron jumbotron-fluid">
+			  <div class="container">
+			     <h1 class="display-4">ESPACIO AVATAR</h1> 
+			    <!-- <p class="lead">Solucion: Ctrl + Z</p> --> -->
+			  </div>
+			</div>
+				
+			</section>
+
+			<section id="mision">
+				<div class="media">
+			  <img src="images/mision.png" class="mr-3" width="100" height="100">
+			  <div class="media-body">
+			    <h5 class="mt-0">MISION</h5>
+			    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			  </div>
+			</div>
+		</section>
+			<br>
+			<section id="vision">
+					<div class="media">
+			  <div class="media-body">
+			    <h5 class="mt-0 mb-1">VISION</h5>
+			    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			  </div>
+			  <img src="images/vision.png" class="ml-3" width="150" height="100">
+			</div>
+			</section>
+			
+		</main>
+		<section id="fb">
+			<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+		</section>
+
+		<!-- footer -->
+
+		<div class="footer">
+			<div class="footer_menu">
+				<div class="c_1">
+					<div class="titulo">
+						<h4>MENU</h4>
+					</div>
+					<br>
+					<ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="contacto.html">MI AVATAR</a></li>
+                        <li><a href="acerca.html">QUIENES SOMOS?</a></li>
+                    </ul>
+				</div>		
+				
+		</div>
+			<!-- termina footer -->
+	</body>
+
+
+	<!-- SCRIPTS -->
+	<div id="fb-root"></div>
+
+	<script>
+		const body = document.querySelector("body");
+		const navbar = document.querySelector(".navbar");
+		const menuBtn = document.querySelector(".menu-btn");
+		const cancelBtn = document.querySelector(".cancel-btn");
+		menuBtn.onclick = ()=>{
+		  navbar.classList.add("show");
+		  menuBtn.classList.add("hide");
+		  body.classList.add("disabled");
+		}
+		cancelBtn.onclick = ()=>{
+		  body.classList.remove("disabled");
+		  navbar.classList.remove("show");
+		  menuBtn.classList.remove("hide");
+		}
+		window.onscroll = ()=>{
+		  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+		}
+	  </script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v8.0" nonce="sPtxTkaI"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>
