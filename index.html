@@ -1,30 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEJOB</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-</head>
-<body>
-    <canvas id="graficaGastos" width="400" height="300"></canvas>
-</body>
-<script>
-    let canvasGastos = document.getElementById("graficaGastos").getContext("2d");
-    var chart = new Chart(canvasGastos,{
-        type:"radar",
-        data:{
-            labels:["Ahorro","Entretenimiento","Comida","Transporte","auto"],
-            datasets:[
-                {
-                    label:"¿En que uso mi dinero?",
-                    backgroundColor:"rgb(0,255,0)",
-                    data:[100,50,100,250,2000]                
-                }
-                
+	<title>MUESTRA</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
 
-            ]
-        }
-    })
-</script>
+	<link rel="stylesheet"  href="css/fontello.css">
+	<link rel="stylesheet"  href="css/estilos.css">
+	</head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<body>
+		<header>
+            
+
+            <!-- <nav class="navbar">
+                <div class="content">
+                  <div class="logo">
+                    <a href="#">CodingNepal</a>
+                  </div>
+                  <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                      <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                  <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                  </div>
+                </div>
+              </nav> -->
+
+			<div class="contenedor">
+                
+				<a href="index.html"><img src="images/legob.png"></a>				
+				<input type="checkbox" id="menu-bar">
+				<label class="icon-menu" for="menu-bar"></label>
+				<nav class="menu">
+                    
+					<a href="index.html">HOME</a>
+					<a href="#mision">MI AVATAR</a>
+					<a href="acerca.html">QUINES SOMOS</a>
+
+				</nav>	
+			</div>	
+		</header>
+
+		<main>
+            <br><br><br>
+			<section id="banner">
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-interval="10000">
+                        
+                        <img src="images/1.jpg" class="d-block w-100" >
+                        
+                      </div>
+                      <div class="carousel-item" data-interval="2000">
+                        <img src="images/2.jpg" class="d-block w-100" >
+                      </div>
+                      
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+				<!-- <img src="images/banner.jpg">
+
+					<div class="contenedor">
+						<h1>COMO PUEDO EMPEZAR?</h1>
+						
+						<br>
+						<a class="btn btn-primary" href="acerca.html" role="button">SABER MAS</a>
+					</div> -->
+			</section>
+
+			<section id="frase">
+				<div class="jumbotron jumbotron-fluid">
+			  <div class="container">
+			     <h1 class="display-4">ESPACIO AVATAR</h1> 
+			    <!-- <p class="lead">Solucion: Ctrl + Z</p> --> -->
+			  </div>
+			</div>
+				
+			</section>
+
+			<section id="mision">
+				<div class="media">
+			  <img src="images/mision.png" class="mr-3" width="100" height="100">
+			  <div class="media-body">
+			    <h5 class="mt-0">MISION</h5>
+			    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			  </div>
+			</div>
+		</section>
+			<br>
+			<section id="vision">
+					<div class="media">
+			  <div class="media-body">
+			    <h5 class="mt-0 mb-1">VISION</h5>
+			    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			  </div>
+			  <img src="images/vision.png" class="ml-3" width="150" height="100">
+			</div>
+			</section>
+			
+		</main>
+		<section id="fb">
+			<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+		</section>
+
+		<!-- footer -->
+
+		<div class="footer">
+			<div class="footer_menu">
+				<div class="c_1">
+					<div class="titulo">
+						<h4>MENU</h4>
+					</div>
+					<br>
+					<ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="contacto.html">MI AVATAR</a></li>
+                        <li><a href="acerca.html">QUIENES SOMOS?</a></li>
+                    </ul>
+				</div>		
+				
+		</div>
+			<!-- termina footer -->
+	</body>
+
+
+	<!-- SCRIPTS -->
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v8.0" nonce="sPtxTkaI"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </html>
