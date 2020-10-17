@@ -6,13 +6,13 @@
       <link rel="stylesheet" href="css/styles.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
       <script src="script.js" defer></script>
-      <title>Responsive Navbar</title>
+      <title>LEJOB</title>
     </head>
     <body>
     <header>
       <nav class="navbar">
-        <a href="index.html"><img src="images/logo.png" width="65%" height="92%"></a>
-        <!-- <div class="brand-title">LEJOB</div> -->
+        <!-- <a href="index.html"><img src="images/logo.png" width="65%" height="92%"></a> -->
+        <div class="brand-title">LEJOB</div>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -21,8 +21,8 @@
         <div class="navbar-links">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Avatar</a></li>
-            <li><a href="#">Nosotros</a></li>
+            <li><a href="#avatar">Mi Avatar</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
             <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
     Iniciar Sesion
@@ -116,7 +116,41 @@
       </nav>
     </header>
     <section id="banner">
-        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>TUS FINANZAS NUNCA FUERON TAN FACILES DE CONTROLAR</h5>
+              <p>Aprende, Ahorra e Invierte al mismo tiempo con LEJOB y nuestra Inteligencia Artificial.</p>
+              <a class="btn btn-primary" href="#" role="button">INICIAR</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>CURSOS EDUCACION FINANCIERA</h5>
+              <p>Te invitamos a conocer sobre los cursos que BBVA nos regala para continuar aprendiendo. </p>
+              <a class="btn btn-primary" href="https://www.bbva.mx/educacion-financiera.html" role="button"  target="_blank">Saber Más</a>
+            </div>
+          </div>
+          
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+        <!-- <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-interval="10000">
                 
@@ -136,21 +170,54 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
+          </div> -->
     </section>
 <section>
     <br><br><br>
 </section>
-    <section>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">AVATAR</h5>
-                            
-              <a href="#" class="card-link">Editar</a>
-              <!-- <a href="#" class="card-link">Another link</a> -->
-            </div>
-          </div>
-    </section>
+<div class="container" id="avatar">  
+  <div class="row justify-content-start">
+<div class="card" style="width: 18rem;">
+  <img src="images/avatar.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><strong>Nuestro Avatar</strong> </h5>
+    <p class="card-text">Con la ayuda de Memo podrás resolver todas tus dudas básicas y no tan básicas sobre cómo manejar tus finanzas a corto y largo plazo.<br><strong>Puedes preguntarle lo que quieras y Memo te apoyará. </strong> </p>
+    <a href="https://creator.us.uneeq.io/try/faa682fa-efcf-44bf-ab61-38513853cc57" class="btn btn-success">INICIAR</a>
+  </div>
+</div>
+  </div> <br>
+<div class="jumbotron jumbotron-fluid" id="nosotros">
+  <div class="container">
+    <h2 class="display-4">¿QUIENES SOMOS?</h2>
+    <p class="lead">LEJOB nace de un proyecto de estudiantes para apoya a la asociedad con la visible falta de educacion financiera de la actualidad. 
+      Al igual que tú, nosotros, hemos tenido MILES de dudas sobre cómo controlar nuestras finanazas y qué es lo mejor para nuestro futuro. <strong>Es así como nace Memo, nuestro guia de las finanzas. </strong></p>
+  </div>
+</div>
+</div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark>
+  <a class="navbar-brand" href="#">LEJOB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#avatar">Mi Avatar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#nosotros">Quienes Somos</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      Todos los Derechos Reservados
+    </span>
+  </div>
+</nav>
    
     </body>
     <!-- SCRIPT -->
